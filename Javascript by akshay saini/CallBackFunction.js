@@ -10,7 +10,7 @@ setTimeout(function x(){
 //call back function with eventlistener (closure to secure data,data hiding)
 
 const call = ()=>{
-       let increment = 0; // closure
+       let increment = 0; // closure // bundle together
        document.getElementById('click').addEventListener("click",()=>{
            console.log(++increment);
        })
@@ -25,6 +25,6 @@ call();
            console.log(++increment);
        }
 
-       this is also a callback function
+       this is also a callback function   // Jo ki baad me chalega after click
  
 */

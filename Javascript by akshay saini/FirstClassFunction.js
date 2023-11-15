@@ -25,8 +25,7 @@ var kk = function(parameter1 , parameter2){
 let argument1 = 12, argument2 = 45;
 kk(argument1, argument2);
 
-//first class function
-// passing a function as an arguments is known as first class function
+
 
 var fn = (x)=>{
     x();

@@ -107,7 +107,7 @@ counter()();  */
 // closure constructer function  :: because it's more sclable than the upper
 
 function Counter(){
-    var count = 0;
+    let count = 0;
     this.incrementCounter = function (){
         count++;
         console.log(count);
@@ -118,7 +118,7 @@ function Counter(){
     }
 }
 
-var counter1 = new Counter();
+let counter1 = new Counter();
 counter1.incrementCounter();
  
 //   *>   Anonymous function : A function without a fnc name is called A...
