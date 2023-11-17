@@ -1,4 +1,4 @@
-const closure =()=>{
+const closure = () =>{
       var a = 20;
       const closure2 = ()=>{
         console.log(a);

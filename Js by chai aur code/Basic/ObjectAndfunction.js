@@ -69,7 +69,6 @@ function fun(...input){
  */   
 
 
-
 //Passing an object to a function 
 
 const objPass = (obj)=>{

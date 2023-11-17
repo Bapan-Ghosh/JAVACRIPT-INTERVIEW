@@ -21,7 +21,7 @@ console.log(copyValue);
 
 //::::::: spread operator (partial deep copy):::::::::::::::::::::::::::::::::::::::::::
 let originalValue2 = {
-    name : "Bapan",
+    namee : "Bapan",
     age : 32,
     address:{
         city:"Kolkata",

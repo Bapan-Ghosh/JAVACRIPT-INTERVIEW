@@ -4,7 +4,7 @@
     //       console.log(arguments)    // we will get error
     //       return a+b;
     // }
-
+ 
 function abc (a,b){
       console.log(arguments)
       return a+b;
@@ -63,4 +63,4 @@ let userInfo = {
     }
 }
 
-userInfo.fullName();
+userInfo.fullName()

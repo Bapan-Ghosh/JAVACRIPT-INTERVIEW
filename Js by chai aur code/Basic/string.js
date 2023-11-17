@@ -1,4 +1,4 @@
-const name="Bapan";
+const name = "Bapan";
 const repoCount = 50;
 
 console.log(`Hello this is ${name} and repo count is ${repoCount}`)

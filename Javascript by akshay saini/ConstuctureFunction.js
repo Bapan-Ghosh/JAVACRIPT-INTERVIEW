@@ -2,8 +2,8 @@
  new keword ka use karein  */
 
 // suppose there is a biscuit factory and here the function is like
-// everything about biscuts and whenever we call the fn by new keyword
-// everytime new biscut created
+// everything about biscuits and whenever we call the fn by new keyword
+// everytime new biscuit created
 
 function biscutMaking(){
     this.width = 12;
@@ -12,10 +12,12 @@ function biscutMaking(){
     this.taste = "chocolate"
 }
 
-new biscut1 = new biscutMaking();
-new biscut2 = new biscutMaking();
-new biscut3 = new biscutMaking();
-new biscut4 = new biscutMaking();
+let biscut1 = new biscutMaking();
+console.log(biscut1.color)
+console.log(biscut1.taste)
+let biscut2 = new biscutMaking();
+let biscut3 = new biscutMaking();
+let biscut4 = new biscutMaking();
 
 /*
    : Why to use constructure function :

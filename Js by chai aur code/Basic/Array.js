@@ -8,9 +8,10 @@ console.log(arr);
 
 const array = [54,88,7,99,14,0];
 const newArray = array.join();   //converts the array into a string
+const newArray2 = array.toString();   //converts the array into a string
 // console.log(typeof newArray);
 console.log(newArray);
-
+console.log(newArray2);
 
 // slice 
 const ar1 = [0,1,2,3,4,5];
@@ -28,8 +29,8 @@ console.log("old first",ar1);
 console.log("old second",myn2);
 
 /* **NOTE
-   <1> slice :- Doesn't change the original array and its arr1.slice(1,4) i.e 1 to 3
-   <2> splice :- Change the original array and its arr2.splice(1,4) i.e 1 to 4
+  <1> slice :- Doesn't change the original array and its arr1.slice(1,4) i.e 1 to 3
+  <2> splice :- Change the original array and its arr2.splice(1,4) i.e 1 to 4
 */
 
 
