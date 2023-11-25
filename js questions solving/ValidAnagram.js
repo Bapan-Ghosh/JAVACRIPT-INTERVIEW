@@ -1,5 +1,4 @@
 /* 
-
   Valid Anagram 
   An anagram is a word or phrase formed by rearranging the letters of a
   different word or phrase, using all the original letters exactly once.
@@ -7,8 +6,6 @@
   input: (s = "anagram") , (t = "nagarm"); ----->>>> output: true,
   input: (s = "rat") ,(t = "car") ----> output : false;
 */
-
-
 // Approach : By using Object
 
 const isAnagram = function (s,t){

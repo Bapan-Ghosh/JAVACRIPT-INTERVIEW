@@ -16,5 +16,8 @@ const twoSum = function(nums, target){
         if(obj[target - n] >=0){
             return [obj[target - n],i];
         }
+        else obj[nums[i]] ++;
+          
     }
+    return 0;
 } 
