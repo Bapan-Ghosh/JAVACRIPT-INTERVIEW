@@ -1,4 +1,4 @@
- // call by value => Deep copy
+// call by value => Deep copy
 
 // call by reference => shallow copy
 
@@ -6,7 +6,7 @@
 
 // Shallow copy
 
-let originalValue = { 
+let originalValue = {  
     name : "Bapan",
     age : 32
 }
@@ -30,17 +30,45 @@ let originalValue2 = {
 }
 
 let copiedValue ={
- ...originalValue2
- ,name:"Marvel",
- address:{
-    ...originalValue2.address,
-    city : "Barasat"
- }
- 
+ ...originalValue2,
+ name:"Marvel",
 }
+
+copiedValue.address.city ="Barasat"
 
 console.log(originalValue2);    
 console.log(copiedValue);   
+
+// by using spread operator we can achive deep copy ,,
+//but when we use nested object it won't behave like deep copy
+// nested object is behave like shallow copy
+/* If we want to achieve deep copy then we have to use the spread operator 
+   for the nested one also
+*/
+let originalValue3 = {
+    namee : "Bapan",
+    age : 32,
+    address:{
+        city:"Kolkata",
+        state:"West Bengal"
+    }
+}
+
+let copiedValue3 ={
+    ...originalValue3,
+    name:"Marvel",
+    address:{
+        ...originalValue3.address,
+        city:'goa'
+    }
+}
+
+console.log(".........................................................")
+console.log(originalValue3);    
+console.log(copiedValue3);   
+   
+
+
 
 // :::::::::::::::::::::::::::::::::::: Deep Copy :::::::::::::::::::::::::::::
 const originalObject = { name: "John", age: 30, address: { city: "New York" } };

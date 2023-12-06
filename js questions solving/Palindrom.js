@@ -1,4 +1,4 @@
-// An integer is a palindrome when it reads the same foeward and backward
+// An integer is a palindrome when it reads the same forward and backward
 
 // input x = 121  --------->>>> : Output : true 
 // input x = 100  --------->>>> : Output : false
