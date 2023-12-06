@@ -87,11 +87,10 @@ console.log(evenNumbers); // Output: [2, 4, 6, 8]
 let fEach = [10,54,74,88,98];
 
 fEach.forEach((value)=>{
-    console.log(value*2);
+    console.log(value*2);  // this will update the existing array with new value
 })
 
 console.log(fEach);
-
 
 /*
 
@@ -109,7 +108,7 @@ whether or not to include the element in the new array. If the callback function
 returns true, the element is included; if it returns false, the element is excluded.
 
 Example:
-
+ 
 JavaScript
 const numbers = [1, 2, 3, 4, 5, 6];
 
@@ -119,18 +118,18 @@ Use code with caution. Learn more
 In this example, the filter() method is used to create a new array evenNumbers 
 containing only the even numbers from the original array numbers. The callback 
 function number => number % 2 === 0 checks if the current element number is even.
- If it is, the element is included in the new array; otherwise, it is excluded.
+If it is, the element is included in the new array; otherwise, it is excluded.
 
 Find:
 
 The find() method returns the first element in the array that satisfies a specific 
 condition. It takes a callback function as an argument, and for each element in the 
 original array, it passes the element to the callback function. The callback function
- returns a boolean value, indicating whether or not to stop searching. If the 
- callback function returns true, the element is returned immediately, and the 
- search is terminated. If the callback function returns false, the search continues
-  until the end of the array. If no element satisfies the condition, the find()
-   method returns undefined.
+returns a boolean value, indicating whether or not to stop searching. If the 
+callback function returns true, the element is returned immediately, and the 
+search is terminated. If the callback function returns false, the search continues
+until the end of the array. If no element satisfies the condition, the find()
+method returns undefined.
 
 Example:
 
@@ -154,8 +153,7 @@ Return Value:filter() returns a new array, while find() returns a single element
  or undefined.
 
 Use Cases:filter() is useful for extracting a subset of data based on criteria,
- while find() is useful for locating a specific element.
-
+while find() is useful for locating a specific element.
 
 
 */
@@ -170,8 +168,8 @@ Use Cases:filter() is useful for extracting a subset of data based on criteria,
 
 Looping in JavaScript and React JS: for...in, for...of, forEach, and map
 There are several ways to iterate over collections (arrays, objects) in JavaScript
- and React JS. Each has its own unique characteristics and use cases. Let's explore
-  them:
+and React JS. Each has its own unique characteristics and use cases. Let's explore
+them:
 
 1. for...in loop:
 

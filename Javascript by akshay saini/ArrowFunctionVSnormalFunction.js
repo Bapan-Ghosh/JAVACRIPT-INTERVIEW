@@ -1,14 +1,13 @@
-
 // <1> Arguments objects are not available in arrow functions, 
 // const abc = (a,b)=>{
-    //       console.log(arguments)    // we will get error
+    //       console.log(arguments)    // we will get an error
     //       return a+b;
     // }
  
 function abc (a,b){
       console.log(arguments)
       return a+b;
-    }
+}
     
     console.log(abc(4,70));
     
@@ -20,7 +19,8 @@ function Car(name){
 }
 
 let carData = new Car('LANDROVER');
-console.log(carData)  // this is allowed means we can create constructor function using normal function
+console.log(carData)  // this is allowed means we can create constructor
+                     //  function using normal function
 
 
 
@@ -29,8 +29,8 @@ console.log(carData)  // this is allowed means we can create constructor functio
 }
 
 let carData2 = new Car2('LANDROVER');
-console.log(carData2)    // this is not allowed to create object of a constructor function
-
+console.log(carData2)    // this is not allowed to create object of a 
+                            constructor function
 */
 
 
@@ -46,21 +46,22 @@ console.log(carData2)    // this is not allowed to create object of a constructo
   
    but in case of arrow function we can't do that
 */
+//  <4> Arrow function do not have their own this binding
 
-//  <4> Arrow function do not have their own this
-
-let userInfo = {
-    name : 'code improve',
-    fullName(){
-        const test = ()=>{
-            console.log(this.name + '===')
-        }
-        test();
-        console.log(this.name+'normal function');
+let user = {
+    name: "GFG",
+    gfg1:() => {
+        console.log("hello " + this.name); // no 'this' binding here
     },
-    fullName2:()=>{
-        console.log(this.name+'Arrow function');
+    gfg2(){    
+        console.log("Welcome to " + this.name); // 'this' binding works here
     }
-}
+};
+user.gfg1();
+user.gfg2();
 
-userInfo.fullName()
+
+
+// gfg is the best for this
+
+// https://www.geeksforgeeks.org/difference-between-regular-functions-and-arrow-functions/

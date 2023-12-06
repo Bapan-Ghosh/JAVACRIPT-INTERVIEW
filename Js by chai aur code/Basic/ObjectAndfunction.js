@@ -1,4 +1,4 @@
-// const flipkart = new Object();    ::::This is a singlesone object
+// const flipkart = new Object();    ::::This is a singletone object
 const user = [
     {
         name:"Bapan",
@@ -16,9 +16,11 @@ const user = [
 console.log(user[0].name);
 console.log(Object.keys(user[0]));
 console.log(Object.values(user[0]));
+console.log(user[0].hasOwnProperty("cool"))
 
 const checkObj ={name:"Bapan",age:20,game:"Iron Man"}
-console.log(checkObj.hasOwnProperty('name')) // To check whether name available or not
+console.log(checkObj.hasOwnProperty('name'))
+// To check whether name property is available or not
 
 
 // Object destructure
@@ -98,7 +100,7 @@ console.log(cool3())
 
 
 // this function only use inside object like :
-
+ 
 const okBro = {
     name:"Samsung",
     model:"S21 FE",
@@ -111,10 +113,9 @@ const okBro = {
 okBro.chillBro()
 
 // Immediately Invoked Function Expressions(IIFE)
-// (function chai(){
+// (function () {
 //     console.log("chai");
-// })()
-
+// })();
 
 /*  
         {{}{}{}{}{}{}{}{}{}{}{}{} Falsy values {}{}{}{}{}{}{}{{}{}{}{}{}{}{}{}{}{}}
