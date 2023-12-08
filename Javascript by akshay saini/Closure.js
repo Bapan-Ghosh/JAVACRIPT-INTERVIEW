@@ -14,14 +14,14 @@ closure()()
                This two line basically same as the closure()()
 */
 
-// when closure2, this function is returning from the closure() , everyting is gone 
-//  from the global scope a=20 is also gone but when we call closure()2
+// when closure2, this function is returning from the closure() , everyting is
+// gone from the global scope a=20 is also gone but when we call closure()2
 // from the outside it will still remember and return the value a = 20;
-//here the closure come into picture
+// here the closure come into picture
 
 
 
-// ::::::::::::::::::::::::: CORNER CASES :::::::::::
+//        ::::::::::::::::::::::::: CORNER CASES :::::::::::
 
 function x(){
     var a = 7;
@@ -40,11 +40,13 @@ x();   // this will print 100
 
 function x(){
     var i = 1;
-    setTimeout(function (){
+    setTimeout(()=>{
         console.log(i);
     },3000)
     console.log("Hey!!");
 }
+
+x()
 
 /*
     Here

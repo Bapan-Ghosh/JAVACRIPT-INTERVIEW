@@ -1,4 +1,4 @@
-/* var ans = new Promise((res, rej)=>{
+ /* var ans = new Promise((res, rej)=>{
     if(true){
         return res();
     }
@@ -16,7 +16,8 @@ ans.then(function () {
 })     */
 
 
-//user will ask for a number b/w 0 se 9 and if the number is below 5 resolve if not reject
+// user will ask for a number b/w 0 se 9 and if the number is below 5 resolve 
+// if not reject
 
 var ans = new Promise((res, rej) =>{
     var n = Math.floor(Math.random() *10);

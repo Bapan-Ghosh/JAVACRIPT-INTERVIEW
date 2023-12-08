@@ -1,9 +1,9 @@
-//koi bhi esa function jisme aap async code likhenge, kyoki async code hai
+// koi bhi esa function jisme aap async code likhenge, kyoki async code hai
 // to aap promises ka istemaal kar sakte hai, jab answer aayega aapko
 // then lagana padega, us then ko lagane se bachne ke liye, aap async await
 // ka istemal kar sakte hai.
 
-function abcd() {
+function abcd(){
   fetch(`https://randomuser.me/api/`)
     .then((raw) => {
       return raw.json();

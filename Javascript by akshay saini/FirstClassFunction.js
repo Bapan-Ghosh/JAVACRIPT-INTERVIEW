@@ -1,36 +1,41 @@
-//console.log(b)  // because this is behaving like a variable
-// b() :: This will give us an error like b() is not a function 
+/* In JavaScript, functions are first-class citizens, which means they can be
+   treated like any other variable. Here are some characteristics of first-class
+   functions in JavaScript:
 
-var b = function () {
-    console.log("b is called ");
+Assigning to a Variable:
+You can assign a function to a variable.
+
+javascript
+Copy code
+const greet = function(name) {
+  console.log(`Hello, ${name}!`);
+};
+Passing as a Parameter:
+Functions can be passed as arguments to other functions.
+
+javascript
+Copy code
+function sayHello(greetingFunction, name) {
+  greetingFunction(name);
 }
 
-b()
+sayHello(greet, "John");
 
 
-// corner case  :: function expression
+Returning from a Function:
+Functions can be returned from other functions.
 
-var x = function xyz() {
-console.log("x is called");
+javascript
+Copy code
+function createGreeter() {
+  return function(name) {
+    console.log(`Greetings, ${name}!`);
+  };
 }
 
-
-// Arguments and parameters
-
-var kk = function(parameter1 , parameter2){
-    console.log(parameter1 , parameter2);
-}
+const myGreeter = createGreeter();
+myGreeter("Alice");
 
 
-let argument1 = 12, argument2 = 45;
-kk(argument1, argument2);
-
-
-
-var fn = (x)=>{
-    x();
-}
-
-fn(()=>{
-    console.log("passing it calling it");
-})
+Taken from gpt
+*/  

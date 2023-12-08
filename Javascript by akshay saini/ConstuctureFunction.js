@@ -3,13 +3,16 @@
 
 // suppose there is a biscuit factory and here the function is like
 // everything about biscuits and whenever we call the fn by new keyword
-// everytime new biscuit created
+// everytime new biscuit will be created
 
 function biscutMaking(){
     this.width = 12;
     this.height = 22;
     this.color = "brown",
-    this.taste = "chocolate"
+    this.taste = "chocolate",
+    // this.cool = function(){
+    //     console.log("Ok bro")
+    // }
 }
 
 let biscut1 = new biscutMaking();

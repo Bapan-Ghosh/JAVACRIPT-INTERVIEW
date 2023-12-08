@@ -2,14 +2,14 @@
 // const abc = (a,b)=>{
     //       console.log(arguments)    // we will get an error
     //       return a+b;
-    // }
+    // } 
  
 function abc (a,b){
       console.log(arguments)
       return a+b;
 }
     
-    console.log(abc(4,70));
+  console.log(abc(4,70));
     
     
 // <2> We can not create constructors from arrow functions
@@ -36,8 +36,6 @@ console.log(carData2)    // this is not allowed to create object of a
 
 
 
-
-
 // <3> Arrow functions are not hoisted
 
 // :::::::::: example    :::::::::::
@@ -46,7 +44,7 @@ console.log(carData2)    // this is not allowed to create object of a
   
    but in case of arrow function we can't do that
 */
-//  <4> Arrow function do not have their own this binding
+//  <4> Arrow function do not have their own this
 
 let user = {
     name: "GFG",
@@ -57,8 +55,8 @@ let user = {
         console.log("Welcome to " + this.name); // 'this' binding works here
     }
 };
-user.gfg1();
-user.gfg2();
+user.gfg1(); // hello
+user.gfg2(); // hello GFG
 
 
 

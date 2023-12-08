@@ -1,5 +1,4 @@
 // Reverse a given string
-
 var userInput = prompt("Please enter some text:");
 
 
