@@ -1,4 +1,4 @@
-let str = prompt("Enter the string");
+// let str = prompt("Enter the string");
 
 const capitalizeFirstWord = (str)=>{
      let allwords = str.split(" ").map((word)=>{
@@ -10,4 +10,5 @@ const capitalizeFirstWord = (str)=>{
      return allwords.join(" ");
 }
 
-console.log( capitalizeFirstWord(str));
+str = "bapan ghosh"
+console.log(capitalizeFirstWord(str));
