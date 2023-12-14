@@ -1,5 +1,5 @@
 const duplicate = (arr)=>{
-      return([...arr,...arr])
+      return [...arr,...arr]
 }
 
 var arr = [1,2,3,4,5,6];

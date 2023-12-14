@@ -10,7 +10,7 @@ const array = [54,88,7,99,14,0];
 const newArray = array.join();   //converts the array into a string
 const newArray2 = array.toString();   //converts the array into a string
 // console.log(typeof newArray);
-console.log(newArray);
+console.log("newArray : "+newArray);
 console.log(newArray2);
 
 // slice 
@@ -21,7 +21,7 @@ console.log("Updated first",ar2);
 // splice
 const myn1 = [0,1,2,3,4,5];
 console.log("old second",myn1);
-const myn2 = myn1.splice(1,3);
+const myn2 = myn1.splice(1,3); // 1 er por theke koto gulo 3 te ekhane
 console.log("Updated second",myn2);
 
 //old arrays
@@ -59,7 +59,14 @@ const fruits = ['banana', 'apple', 'cherry', 'date', 'fig'];
 fruits.sort((a, b) => b.localeCompare(a));
 console.log(fruits); // ['fig', 'date', 'cherry', 'banana', 'apple']
 
-//
+// spread operator
+const a = [10,50,77]
+const b = [...a];  // jokhn amra spread operator use kori tokhon basically
+                   // eta spread hoye jai array elements thake na tai array
+                  // er vitor rakhte amra [ ] use kori
+
+
+
 // Sorting objects in an array based on a specific property:
 const persons = [
    { name: 'Alice', age: 30 },
@@ -78,7 +85,7 @@ const persons = [
    { name: 'Alice', age: 30 },
    { name: 'Bob', age: 25 },
    { name: 'Charlie', age: 35 },
- ];
+  ];
  
  // Sort by age in descending order
  persons.sort((a, b) => b.age - a.age);

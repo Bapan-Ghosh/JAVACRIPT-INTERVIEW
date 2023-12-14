@@ -5,7 +5,6 @@
 
 // time complexity is O(n) and space complexity is O(1)
 function rotateK(nums,k){
-     let size = nums.length;
      reverse(nums,0,nums.length-1);         
      reverse(nums,0,k-1);         
      reverse(nums,k,nums.length-1);    

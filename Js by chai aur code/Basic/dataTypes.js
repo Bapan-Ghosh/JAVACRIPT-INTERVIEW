@@ -4,16 +4,17 @@
 // or primitive stack mai jata hai
 
 
-// Referene(Non primitive)
+// Referene(Non primitive) // or reference type
 
 // Array, Objects, Functions       => non premitive heap me jata hai
 const heros = ["IronMan","captain marvel","captian america"];
 
 // Object
 let obj = {
-    name:"Bapan",
+    name :"Bapan",
     age:23
 }
+
 
 const myfn =  function(){
     console.log("normal function");

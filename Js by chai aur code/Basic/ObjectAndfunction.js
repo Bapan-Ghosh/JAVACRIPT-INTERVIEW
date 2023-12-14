@@ -1,4 +1,6 @@
 // const flipkart = new Object();    ::::This is a singletone object
+
+// object literals
 const user = [
     {
         name:"Bapan",
@@ -28,7 +30,7 @@ console.log(checkObj.hasOwnProperty('name'))
 const smartWatch = {
      brand : "fastrack",
      model :"fastrack optimus",
-     price: 2200
+     price : 2200
 } 
 
 const {brand,model,price} = smartWatch;
@@ -37,6 +39,14 @@ console.log(brand);
 console.log(model);
 console.log(price);
 
+
+// merge objects
+const obj1 = {1: "a", 2:"b"}
+const obj2 = {3:"a",4:"b"}
+
+// const bbj3 = Object.assign({},obj1,obj2);
+// or
+const obj3 = {...obj1,...obj2};
 
 // Function
 /* const abc = function(){

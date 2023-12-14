@@ -1,4 +1,4 @@
-let str = prompt("Enter the string ");
+// let str = prompt("Enter the string ");
 
 const occu = (str) =>{
      let occurencesObj = {};
@@ -16,4 +16,4 @@ const occu = (str) =>{
 }
 
 
-console.log(occu(str));
+console.log(occu("bapan"));

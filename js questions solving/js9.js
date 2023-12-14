@@ -5,7 +5,7 @@ const capitalizeFirstWord = (str)=>{
          return word[0].toUpperCase() + word.substring(1);
         //  split fn will split each word and store in a array then, as it's an
         // array so will apply toupper to the and then we will merge rest words
-     })
+     }) 
 
      return allwords.join(" ");
 }
