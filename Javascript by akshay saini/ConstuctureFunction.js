@@ -9,7 +9,7 @@ function biscutMaking(){
     this.width = 12;
     this.height = 22;
     this.color = "brown",
-    this.taste = "chocolate",
+    this.taste = "chocolate"
     // this.cool = function(){
     //     console.log("Ok bro")
     // }

@@ -9,7 +9,7 @@ function abc (a,b){
       return a+b;
 }
     
-  console.log(abc(4,70));
+console.log(abc(4,70));
     
     
 // <2> We can not create constructors from arrow functions
@@ -19,12 +19,12 @@ function Car(name){
 }
 
 let carData = new Car('LANDROVER');
-console.log(carData)  // this is allowed means we can create constructor
-                     //  function using normal function
+console.log(carData.brand)  // this is allowed means we can create constructor
+                           //  function using normal function
 
 
 
-/*const Car2 = (name)=>{
+/* const Car2 = (name)=>{
     this.brand = name;
 }
 
@@ -46,12 +46,12 @@ console.log(carData2)    // this is not allowed to create object of a
 */
 //  <4> Arrow function do not have their own this
 
-let user = {
+let user = { 
     name: "GFG",
     gfg1:() => {
         console.log("hello " + this.name); // no 'this' binding here
     },
-    gfg2(){    
+    gfg2:function(){    
         console.log("Welcome to " + this.name); // 'this' binding works here
     }
 };

@@ -1,12 +1,12 @@
 const a = {
-    how :"cool",
-    so :"Ok",
+    how : "cool",
+    so : "Ok",
     b :{
-        c :{
-            d:{
-                name :"Bapan",
-                city :"Kolkata",
-                State :"West Bengal"
+        c : {
+            d: {
+                name : "Bapan",
+                city : "Kolkata",
+                State : "West Bengal"
             }
         }
     }

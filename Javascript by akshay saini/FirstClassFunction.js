@@ -39,3 +39,26 @@ myGreeter("Alice");
 
 Taken from gpt
 */  
+
+
+//function statement
+function a(){
+  console.log("a");
+}
+
+// Function Expression
+const abc = function (){
+  console.log("Cool ")
+}
+
+// difference between function statement and function expression is different
+// hoisting behaviour 
+
+
+// Named function expression
+var b = function xyz(){
+  console.log("BBBBB");
+} 
+b();
+
+xyz() // this will give us an error

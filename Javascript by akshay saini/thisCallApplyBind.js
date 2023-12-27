@@ -1,4 +1,9 @@
-let name ={
+/*  
+In JavaScript, call, apply, and bind are three powerful methods used to
+invoke functions with specific context and arguments.
+*/
+
+let name = {
     firstName : "Bapan",
     lastName : "Ghosh",
 }

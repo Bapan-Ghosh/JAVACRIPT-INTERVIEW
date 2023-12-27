@@ -14,7 +14,7 @@ closure()()
                This two line basically same as the closure()()
 */
 
-// when closure2, this function is returning from the closure() , everyting is
+// when closure2, this function is returning from the closure() ,everyting has
 // gone from the global scope a=20 is also gone but when we call closure()2
 // from the outside it will still remember and return the value a = 20;
 // here the closure come into picture
@@ -40,7 +40,7 @@ x();   // this will print 100
 
 function x(){
     var i = 1;
-    setTimeout(()=>{
+    setTimeout(()=>{  
         console.log(i);
     },3000)
     console.log("Hey!!");
@@ -56,6 +56,16 @@ x()
        this function forms a closure it's remember the value of i i.e 1
        and print it after 3000 second          : This is a call back function   
 */
+
+// setTimeout+closure
+for(var i=1 ; i<= 5 ; i++){
+    setTimeout(()=>{
+       console.log(i);   // this will print 6 6 times because of the reference     
+    },i*1000)
+}
+
+
+
 
 
 //  :::::::::::::::::
@@ -83,7 +93,8 @@ outest()()();
 
 // data privacy and data hiding example
 
-/*var count = 0;
+/*
+var count = 0;
 
 const incr = ()=>{
     count++;

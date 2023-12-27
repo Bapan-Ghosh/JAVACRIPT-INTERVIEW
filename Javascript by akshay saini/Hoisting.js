@@ -1,18 +1,23 @@
-// console.log(x);  
-// value of x is : undefined
-/* Hoisting is the default behavior of moving all the declarations at the
-   top of the scope before code execution. Basically, it gives us an advantage
-   that no matter where functions and variables are declared, they are moved to
-   the top of their scope regardless of whether their scope is global or local. 
-   It allows us to call functions before even writing them in our code.  */
+// Notes from GFG
+// Hoisting is a phenomena in javascript by which we can access variables and 
+// functions even before we have initialized it.
 
-var x = 7;
+var s = 20;
 
-function getName(){
-    console.log("Namaste Javascript :");
+ok();
+function ok(){
+    console.log("222222220");
 }
 
-console.log(getName());
-// getName()
-console.log(c)            // Cannot access 'c' before initialization
-let c = 15;
+console.log("from var");
+
+//  important 
+
+getName();  // this will give us error "getName is not a function"
+             // because it will behave same as variable, during memory creation
+             // fetch getName = undefined i.e why  
+
+var getName = function (){
+     console.log("abc");
+}
+ 

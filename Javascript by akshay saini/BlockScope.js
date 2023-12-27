@@ -87,3 +87,6 @@ let globalLet = 100;
 console.log(window.globalLet); // undefined (in a browser environment)
 
 */
+
+// ******Lexcical environment is the local memory along with the lexical 
+//       environment of it's parents

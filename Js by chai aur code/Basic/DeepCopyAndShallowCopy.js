@@ -17,7 +17,7 @@ copyValue.age = 24;
 
 console.log(originalValue);
 console.log(copyValue);
-// Both the value get changed
+// Both the value will get changed
 
 //::::::: spread operator (partial deep copy):::::::::::::::::::::::::::::::::::::::::::
 let originalValue2 = {
