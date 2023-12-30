@@ -6,7 +6,7 @@ going back to the kitchen (asynchronous operation). The waiter promises to retur
 with your food (result), but you don't know exactly when. That's where Promises 
 come in!
 
-      Promise Object: It's a placeholder for the eventual result (or failure) 
+      Promise Object: It's a placeholder for the certain period of time eventual result (or failure)   
                       of an asynchronous operation. It represents three states:
 
                  Pending: Operation is ongoing (waiter is preparing the food).
