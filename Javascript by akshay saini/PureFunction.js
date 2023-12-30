@@ -5,7 +5,7 @@
      input arguments.
      Also, a pure function does not produce any observable side effects such as 
      network requests or data mutation, etc
-
+ 
 
     Let’s see the below JavaScript Function:
     function calculateGST(productPrice) {

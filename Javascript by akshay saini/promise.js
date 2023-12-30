@@ -1,4 +1,22 @@
- /* var ans = new Promise((res, rej)=>{
+/*
+     Understanding Promises:
+
+Asynchronous Operations: Imagine a waiter taking your order (code execution) and
+going back to the kitchen (asynchronous operation). The waiter promises to return 
+with your food (result), but you don't know exactly when. That's where Promises 
+come in!
+
+      Promise Object: It's a placeholder for the eventual result (or failure) 
+                      of an asynchronous operation. It represents three states:
+
+                 Pending: Operation is ongoing (waiter is preparing the food).
+            Fulfilled: Operation completed successfully (waiter returns with food).
+               Rejected: Operation failed (waiter dropped the food).
+
+*/
+
+
+/* var ans = new Promise((res, rej)=>{
     if(true){
         return res();
     }
@@ -65,3 +83,5 @@ ans.then(function(){
   .catch((error)=>{
     console.log(error);
   })
+
+// Promise is an object, representing eventual comlesition of an async operation  

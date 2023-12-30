@@ -11,7 +11,7 @@ const greet = function(name) {
   console.log(`Hello, ${name}!`);
 };
 Passing as a Parameter:
-Functions can be passed as arguments to other functions.
+Functions can be passed as an arguments to other functions.
 
 javascript
 Copy code
