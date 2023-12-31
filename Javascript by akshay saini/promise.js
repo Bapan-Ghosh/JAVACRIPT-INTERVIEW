@@ -6,8 +6,8 @@ going back to the kitchen (asynchronous operation). The waiter promises to retur
 with your food (result), but you don't know exactly when. That's where Promises 
 come in!
 
-      Promise Object: It's a placeholder for the certain period of time eventual result (or failure)   
-                      of an asynchronous operation. It represents three states:
+      Promise is an object that represents eventual complication (or failure)   
+                      of an asynchronous operation. It represents three states: 
 
                  Pending: Operation is ongoing (waiter is preparing the food).
             Fulfilled: Operation completed successfully (waiter returns with food).
@@ -85,3 +85,32 @@ ans.then(function(){
   })
 
 // Promise is an object, representing eventual comlesition of an async operation  
+
+// promise EP-02 S-02
+
+const cart = ["Shoes","Pants","Laptop"];
+createOrder(cart,function(orderId){
+    proceedToPaymentId(orderId);
+});
+
+/* this this case we are kinds of dependent on the createOrder API
+   to call theproceedToPaymentId API ,and we don't even know whether
+   the call back function is call one time or multiple times and there is 
+   no surety that the call back fn will call
+*/
+
+const promise = createOrder(cart);
+promise.then(function(orderId){
+    proceedToPaymentId(orderId);
+})
+
+// here createOrder will return an empty object and then inside the promise 
+// object that will definetly call and it will call just once
+
+const apI = "https://jsonplaceholder.typicode.com/posts"
+
+const user = fetch(apI);
+console.log(user);
+user.then(function(data){
+    console.log(data)
+})
