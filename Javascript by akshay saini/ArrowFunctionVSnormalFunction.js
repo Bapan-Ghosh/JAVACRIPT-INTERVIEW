@@ -34,8 +34,6 @@ console.log(carData2)    // this is not allowed to create object of a
 */
 
 
-
-
 // <3> Arrow functions are not hoisted
 
 // :::::::::: example    :::::::::::
@@ -56,7 +54,7 @@ let user = {
     }
 };
 user.gfg1(); // hello
-user.gfg2(); // hello GFG
+user.gfg2(); // Welcome to GFG
 
 
 

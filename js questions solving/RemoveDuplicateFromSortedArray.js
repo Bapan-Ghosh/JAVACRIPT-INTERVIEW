@@ -26,4 +26,7 @@ var removeDuplicates = function(nums) {
     return i+1;
 };
 
-console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
+nums = [0,0,1,1,1,2,2,3,3,4];
+const i = removeDuplicates(nums)
+nums.splice(i)
+console.log(nums)

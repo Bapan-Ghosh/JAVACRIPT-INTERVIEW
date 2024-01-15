@@ -4,7 +4,7 @@
 // input : [12,35,1,10,34,1]  ---------- >>>>>>> Output : 34
 // input : [10,5,10]      ------------>>>>>>>>>> Output : 5
 
-secondLargestElement =(arr)=>{
+secondLargestElement = (arr)=>{
     let largest = Number.NEGATIVE_INFINITY;
     let secondLargest = Number.NEGATIVE_INFINITY;
     for(let i=0 ; i<arr.length ; i++){

@@ -45,8 +45,6 @@ console.log(expensiveProducts); // Output: [{ name: "Laptop", price: 1200 }]
 */
 
 
-
-
 // reduce method
 
 const arr4 = [4,54,7,8,9,74,87,99];
@@ -66,7 +64,7 @@ const people = [
     { name: 'Alice', age: 25 },
     { name: 'Bob', age: 30 },
     { name: 'Charlie', age: 22 },
-  ];
+];
   
   const person = people.find((p) =>  p.age === 30);
   console.log(person); // Output: { name: 'Bob', age: 30 }

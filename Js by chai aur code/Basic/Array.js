@@ -22,6 +22,7 @@ console.log("Updated first",ar2);
 const myn1 = [0,1,2,3,4,5];
 console.log("old second",myn1);
 const myn2 = myn1.splice(1,3); // 1 er por theke koto gulo 3 te ekhane
+console.log("After splice",myn1)
 console.log("Updated second",myn2);
 
 //old arrays
@@ -62,7 +63,7 @@ console.log(fruits); // ['fig', 'date', 'cherry', 'banana', 'apple']
 // spread operator
 const a = [10,50,77]
 const b = [...a];  // jokhn amra spread operator use kori tokhon basically
-                   // eta spread hoye jai array elements thake na tai array
+                   // eta spread hoye jai array elements theke, tai array
                   // er vitor rakhte amra [ ] use kori
 
 

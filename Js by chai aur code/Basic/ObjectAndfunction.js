@@ -135,3 +135,60 @@ okBro.chillBro()
          "0", 'false' , " ", [], {}, function(){},  
 */
 
+// Some object questions answers
+// Q1.
+const objjj = {
+    a : "one",
+    b : "two",
+    c : "three",
+};
+
+console.log(objj) // this will print a: "three", b: "two" =>a position
+                  //will remain at the same position but value get replaced
+
+
+// Q2.
+const a = {};
+const b = {key: 'b'};
+const c = {key: 'c'};
+
+a[b] = 123;
+a[c] = 456;
+console.log(a[b]);  // this will print 456
+/* 
+    when we write a[b] = 123 this will try to convert b object to string
+    now,
+    a["[object object]"] = 123 like this
+    and then when we write
+    a[c] = 456
+    it will overwrite like a["[object object]"] = 456
+
+    //when we try to convert object to string directly it gives us 
+      ["[object object]" ]
+*/ 
+
+// Q3. What's JSON.stringify and JSON.parse ?
+
+const userr = {
+     name :"Bapan",
+     age: 24,
+};
+
+const strObj = JSON.stringify(user); // this is to convert obj to string
+localStorage.setItem("test",strObj);
+
+console.log(JSON.parse(strObj)) // this is to convert string to obj
+
+
+//Q4.
+
+const value = {number : 10};
+const multiply = (x = {...value}) =>{
+    console.log((x.number *=2))
+};
+
+multiply(); // 20
+multiply() // 20
+multiply(value) // 20
+multiply(value) // 40
+ 

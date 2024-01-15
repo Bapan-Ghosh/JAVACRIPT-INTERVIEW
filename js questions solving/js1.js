@@ -8,5 +8,5 @@ var savedStr = userInput.split(" ")
         return word.split("").reverse().join("")
         //here split will split sm as upper and reverse 'napab' and 'hsohg' ['',''] then join it to a string
     })
-
+ 
 console.log(savedStr.join(" "))    

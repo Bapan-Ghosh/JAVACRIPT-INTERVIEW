@@ -9,15 +9,14 @@
     output : [1,2]
 */
 
-const twoSum = function(nums, target){
-    var obj = {};
-    for(let i=0 ; i<nums.length ; i++){
-        var n = nums[i];
+const twoSum = (nums, target)=>{
+    let obj = {};
+    for(let i=0 ; i<nums.length ; i++){ 
+        let n = nums[i];
         if(obj[target - n] >=0){
             return [obj[target - n],i];
         }
-        else obj[n] = i;
-          
+        else obj[n] = i;  
     }
     return 0;
 } 

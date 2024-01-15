@@ -29,5 +29,12 @@ printFullName.call(name2,"kolkata")
 printFullName.apply(name2,["kolkata"])
 
 // bind method
-let printMyName = printFullName.bind(name2,"Kolkata"); // this will bind a fn
-printMyName(); // this is just calling the fn
+//let printMyName = printFullName.bind(name2,"Kolkata"); // this will bind a fn
+//printMyName(); // this is just calling the fn
+
+                                   /* OR */
+
+let printMyName =   printFullName.bind(name2);
+printMyName("London")
+printMyName("Sikim")
+printMyName("Darjeeling")

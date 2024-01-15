@@ -1,5 +1,6 @@
 // All JavaScript objects inherit properties and methods from a prototype.
-//In JavaScript, the prototype is an object that is associated with every function and object by default. 
+// In JavaScript, the prototype is an object that is associated with every 
+// function and object by default. 
 const obj = {
     name:"Bapan",
     getName:function(){

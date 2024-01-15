@@ -114,3 +114,71 @@ console.log(user);
 user.then(function(data){
     console.log(data)
 })
+
+
+// Output questions
+/////////////////////////
+console.log("Start")
+
+const promise1 = new Promise((resolve, reject)=>{ // this is sync code
+    console.log(1);
+    resolve(2);
+})
+
+promise1.then((res)=>{  // this is a async code
+    console.log(res);
+})
+
+console.log("end")
+
+/*
+    : Output :
+     start 
+     1
+     end
+     2
+*/
+
+
+console.log("Start")
+
+const promise2 = new Promise((resolve, reject)=>{ // this is sync code
+    console.log(1);
+    //if there is no resolve then the then will never call
+})
+
+promise2.then((res)=>{  // this is a async code
+    console.log(res);
+})
+
+console.log("end")
+
+
+// Q3. Promise chaining
+function job(){
+    return new Promise(function (res, rej){
+        reject();
+    })
+}
+
+let promise166 = job();
+
+promise166
+     .then(function(){
+        console.log("Success 1");
+     })
+     .then(function(){
+        console.log("Success 2");
+     })
+     .then(function(){
+        console.log("Success 3");
+     })
+     .catch(function(){
+        console.log("Error 1");
+     })
+     .then(function(){
+        console.log("Success 4");
+     })
+
+ // output will be 
+  // Error 1 , Success 4 because of the rej error 1 will print and then    

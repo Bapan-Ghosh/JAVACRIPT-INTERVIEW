@@ -1,3 +1,6 @@
+// A JavaScript callback is a function which is to be executed after another
+// function has finished execution
+
 setTimeout(function x(){
     console.log("ppppppp")
 },2000)

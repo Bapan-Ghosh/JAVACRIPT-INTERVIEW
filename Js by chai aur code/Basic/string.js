@@ -19,5 +19,5 @@ console.log(newString2);
 const url = "https://bapan.com/bapan%20ghosh"
 console.log(url.replace('%20','_'));
 console.log(url.includes('sundar'));
-console.log(gameName.split(' ')); 
+console.log(gameName.split('')); 
 // 

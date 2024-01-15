@@ -1,8 +1,7 @@
 //By using Kadane's Algorithm 
-
 function maxSubArray(nums){
     let currentSum = 0;
-    maxSum = 0;
+    let maxSum = 0;
 
     for(let i=0 ; i<nums.length ; i++){
         currentSum += nums[i];
