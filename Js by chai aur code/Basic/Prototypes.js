@@ -15,7 +15,7 @@ console.log(obj);
 
 const obj2 = {
     roll:1,
-    __proto__:obj
+    __proto__:obj   
 }
 
 // console.log(obj2.roll);

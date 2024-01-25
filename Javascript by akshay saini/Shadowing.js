@@ -1,6 +1,6 @@
-/* var a=5;
+/* var a = 5;
 function f(){
-    var a=2;
+    var a = 2;
     console.log(a);  // 2
 }
 f()
@@ -19,5 +19,3 @@ console.log(b);
 
 // this will be in global for var;  this will not behave like function and
 // print 40 40
-
-

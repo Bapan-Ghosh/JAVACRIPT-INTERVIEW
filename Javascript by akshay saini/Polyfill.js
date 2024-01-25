@@ -1,3 +1,14 @@
+/*
+   Polyfill is a piece of code that provides functionality that is not natively 
+   available in the current version of a browser or JS engine. Polyfills are
+   commonly used to implement new web standards or features that have been added
+   to JS but are not yet widely supported by all web browsers. For example, if a
+   new JavaScript method is introduced in the latest version of the language, 
+   but older browsers do not support it, a polyfill can be written to add support
+   for the new method in those older browsers.
+*/
+
+
 //Q :Polyfill for call method
 
 let car1 = {

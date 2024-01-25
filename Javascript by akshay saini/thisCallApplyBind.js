@@ -1,6 +1,12 @@
 /*  
   In JavaScript, call, apply, and bind are three powerful methods used to
   invoke functions with specific context and arguments.
+
+  /////////////////////////////////////////////////////////////////////////
+  Whenever we call a function, by default js behind the scene uses the call 
+  method. When we have a function defined inside an object, and we want to 
+  reuse the function inside that object in another object, we use call bind 
+  and apply.
 */
 
 let name = {

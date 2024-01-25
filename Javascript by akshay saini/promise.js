@@ -6,7 +6,7 @@ going back to the kitchen (asynchronous operation). The waiter promises to retur
 with your food (result), but you don't know exactly when. That's where Promises 
 come in!
 
-      Promise is an object that represents eventual complication (or failure)   
+      Promise is an object that represents eventual completion or failure   
                       of an asynchronous operation. It represents three states: 
 
                  Pending: Operation is ongoing (waiter is preparing the food).
@@ -84,16 +84,16 @@ ans.then(function(){
     console.log(error);
   })
 
-// Promise is an object, representing eventual comlesition of an async operation  
+// Promise is an object, representing eventual complesition of an async operation  
 
 // promise EP-02 S-02
 
 const cart = ["Shoes","Pants","Laptop"];
 createOrder(cart,function(orderId){
     proceedToPaymentId(orderId);
-});
+0});
 
-/* this this case we are kinds of dependent on the createOrder API
+/* In this case we are kinds of dependent on the createOrder API
    to call theproceedToPaymentId API ,and we don't even know whether
    the call back function is call one time or multiple times and there is 
    no surety that the call back fn will call
@@ -153,8 +153,15 @@ promise2.then((res)=>{  // this is a async code
 
 console.log("end")
 
+//OUTPUT
+/*   Start
+     1
+     end
+ */
 
 // Q3. Promise chaining
+//  Promises are useful when you have to handle more than one asynchronous task,
+//  one after another. For that, we use promise chaining
 function job(){
     return new Promise(function (res, rej){
         reject();
@@ -180,5 +187,5 @@ promise166
         console.log("Success 4");
      })
 
- // output will be 
-  // Error 1 , Success 4 because of the rej error 1 will print and then    
+// output will be 
+// Error 1 , Success 4 =>>>> Because of the rej error 1 will print and then    

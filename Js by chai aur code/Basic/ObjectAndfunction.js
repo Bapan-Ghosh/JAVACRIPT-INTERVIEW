@@ -18,10 +18,10 @@ const user = [
 console.log(user[0].name);
 console.log(Object.keys(user[0]));
 console.log(Object.values(user[0]));
-console.log(user[0].hasOwnProperty("cool"))
+console.log(user[0].hasOwnProperty("cool")) // false
 
 const checkObj ={name:"Bapan",age:20,game:"Iron Man"}
-console.log(checkObj.hasOwnProperty('name'))
+console.log(checkObj.hasOwnProperty('name'))         // true
 // To check whether name property is available or not
 
 
@@ -143,9 +143,9 @@ const objjj = {
     c : "three",
 };
 
-console.log(objj) // this will print a: "three", b: "two" =>a position
+objjj.a = "three";
+console.log(objjj) // this will print a: "three", b: "two" =>a position
                   //will remain at the same position but value get replaced
-
 
 // Q2.
 const a = {};
@@ -174,7 +174,7 @@ const userr = {
      age: 24,
 };
 
-const strObj = JSON.stringify(user); // this is to convert obj to string
+const strObj = JSON.stringify(userr); // this is to convert obj to string
 localStorage.setItem("test",strObj);
 
 console.log(JSON.parse(strObj)) // this is to convert string to obj

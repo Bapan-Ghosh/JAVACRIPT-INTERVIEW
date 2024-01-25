@@ -29,7 +29,7 @@ let originalValue2 = {
     }
 }
 
-let copiedValue ={
+let copiedValue = {
  ...originalValue2,
  name:"Marvel",
 }
@@ -54,7 +54,7 @@ let originalValue3 = {
     }
 }
 
-let copiedValue3 ={
+let copiedValue3 = {
     ...originalValue3,
     name:"Marvel",
     address:{

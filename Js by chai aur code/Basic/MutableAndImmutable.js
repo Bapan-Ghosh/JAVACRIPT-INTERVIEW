@@ -6,7 +6,6 @@ c = 787878;
 // if we change the value of b it won't change the value of a because it's
 // immutable
 
-
 // now ,
 
 let arr = [1 , 5 , 8];
@@ -18,6 +17,5 @@ console.log(arr2)
 
 // both value will be change because both arr and arr2 is pointing to the same
 // location i.e it's mutable
-
 
 // Objects are also mutable

@@ -61,7 +61,7 @@ evaluate("substract")(4)(2)
 //  Q-3 - Infinite currying => sum(1)(2)(3)....(n)
 const sumInfinite = (a)=>{
     return (b)=>{
-        if(b) return sum2(a+b);
+        if(b) return sumInfinite(a+b);
         return a;
      } 
 }

@@ -20,7 +20,6 @@ closure()()
 // here the closure come into picture
 
 
-
 //        ::::::::::::::::::::::::: CORNER CASES :::::::::::
 // when ever a function is called every time a execution context is created
 function x(){
