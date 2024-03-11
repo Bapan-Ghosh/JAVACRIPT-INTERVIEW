@@ -3,4 +3,5 @@ function checkArray(elem){
 }
 
 console.log(checkArray([]));
+
 console.log(checkArray({}));

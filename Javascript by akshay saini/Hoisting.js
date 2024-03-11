@@ -2,6 +2,8 @@
 // Hoisting is a phenomena in javascript by which we can access variables and 
 // functions even before we have initialized it.
 
+
+/* Hoisting is JavaScript's default behavior of moving declarations to the top. */
 var s = 20;
 
 ok();

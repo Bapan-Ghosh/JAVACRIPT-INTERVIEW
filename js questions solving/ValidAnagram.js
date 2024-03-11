@@ -22,7 +22,6 @@ const isAnagram = function (s,t){
     for(const key in obj1){
         // console.log(key);
         if(obj1[key] !== obj2[key]) return false;
-
     }
     return true;
 }

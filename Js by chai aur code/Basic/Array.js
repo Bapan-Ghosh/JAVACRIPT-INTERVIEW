@@ -64,7 +64,7 @@ console.log(fruits); // ['fig', 'date', 'cherry', 'banana', 'apple']
 const a = [10,50,77]
 const b = [...a];  // jokhn amra spread operator use kori tokhon basically
                    // eta spread hoye jai array elements theke, tai array
-                  // er vitor rakhte amra [ ] use kori
+                  // er vitor rakhte amra [ ] use kori, ****to copy 
 
 
 
@@ -79,7 +79,7 @@ const persons = [
  persons.sort((a, b) => a.age - b.age);
  console.log(persons);
 
- //
+//
 //  Sorting objects in an array based on a specific property in descending order:
 
  const persons2 = [

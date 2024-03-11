@@ -1,5 +1,4 @@
 /*
-
 Here's a comprehensive explanation of the this keyword in JavaScript:
 
 What it is:

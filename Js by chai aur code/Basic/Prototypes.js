@@ -1,6 +1,10 @@
 // All JavaScript objects inherit properties and methods from a prototype.
 // In JavaScript, the prototype is an object that is associated with every 
-// function and object by default. 
+// function and object by default.(whenever we create an obj or fn js 
+// automatically creates prototypes  ) 
+
+// When a new object is created in JavaScript, it autmatically inherits 
+// properties and methods of its prototype object. This is known as prototypal inheritance
 const obj = {
     name:"Bapan",
     getName:function(){
@@ -11,11 +15,11 @@ const obj = {
     }
 }
 
-console.log(obj);
+// console.log(obj);
 
 const obj2 = {
     roll:1,
-    __proto__:obj   
+    __proto__:obj   // inherited the properties of obj 
 }
 
 // console.log(obj2.roll);

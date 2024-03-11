@@ -18,7 +18,7 @@ console.log(Math.abs(-4));
 // this is for to get only positive values
 
 console.log(Math.round(4.6));
-console.log(Math.ceil(4.5)) // 5 always give upper values.
+console.log(Math.ceil(4.5)) // 5  =>always give upper values.
 console.log(Math.floor(4.2)) // 4 always
 
 console.log(Math.min(20,10,80,17,77,96,99));

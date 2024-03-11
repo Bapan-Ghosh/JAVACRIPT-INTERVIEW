@@ -40,7 +40,7 @@ printFullName.apply(name2,["kolkata"])
 
                                    /* OR */
 
-let printMyName =   printFullName.bind(name2);
+let printMyName = printFullName.bind(name2);
 printMyName("London")
 printMyName("Sikim")
 printMyName("Darjeeling")

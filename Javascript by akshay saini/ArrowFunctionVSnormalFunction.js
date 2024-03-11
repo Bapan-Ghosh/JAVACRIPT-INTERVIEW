@@ -23,7 +23,6 @@ console.log(carData.brand)  // this is allowed means we can create constructor
                            //  function using normal function
 
 
-
 /* const Car2 = (name)=>{
     this.brand = name;
 }
@@ -32,7 +31,6 @@ let carData2 = new Car2('LANDROVER');
 console.log(carData2)    // this is not allowed to create object of a 
                             constructor function
 */
-
 
 // <3> Arrow functions are not hoisted
 
@@ -53,9 +51,9 @@ let user = {
         console.log("Welcome to " + this.name); // 'this' binding works here
     }
 };
+
 user.gfg1(); // hello
 user.gfg2(); // Welcome to GFG
-
 
 
 // gfg is the best for this

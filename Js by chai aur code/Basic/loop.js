@@ -12,7 +12,11 @@ const newArray = arr2.map((elem,index)=>{
     return elem*2
 })
 
-console.log(newArray);
+console.log("map");
+console.log(arr2)
+console.log(newArray)
+//  (6) [2, 65, 7, 77, 8, 97]
+//  (6) [4, 130, 14, 154, 16, 194]
 
 // filter
 

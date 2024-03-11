@@ -1,14 +1,11 @@
 // call by value => Deep copy
-
 // call by reference => shallow copy
-
 // shallow and deep copy only applicable in non premitive data types(array & objects)
 
 // Shallow copy
-
 let originalValue = {  
     name : "Bapan",
-    age : 32
+    age : 24
 }
 
 let copyValue = originalValue;
@@ -34,7 +31,7 @@ let copiedValue = {
  name:"Marvel",
 }
 
-copiedValue.address.city ="Barasat"
+copiedValue.address.city = "Barasat"
 
 console.log(originalValue2);    
 console.log(copiedValue);   
@@ -43,7 +40,7 @@ console.log(copiedValue);
 //but when we use nested object it won't behave like deep copy
 // nested object is behave like shallow copy
 /* If we want to achieve deep copy then we have to use the spread operator 
-   for the nested one also
+   for the nested one also 
 */
 let originalValue3 = {
     namee : "Bapan",

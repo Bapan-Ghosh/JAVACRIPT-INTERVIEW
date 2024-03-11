@@ -48,7 +48,7 @@ function a(){
 
 // Function Expression
 const abc = function (){
-  console.log("Cool ")
+  console.log("Cool")
 }
 
 // difference between function statement and function expression is different

@@ -9,4 +9,4 @@ const isPalindrome = function(x){
 }
 
 // here the + will convert the string to a number
-console.log(isPalindrome(121));
+console.log(isPalindrome(100));

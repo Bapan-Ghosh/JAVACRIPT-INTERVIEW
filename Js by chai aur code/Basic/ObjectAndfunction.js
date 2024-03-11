@@ -42,7 +42,7 @@ console.log(price);
 
 // merge objects
 const obj1 = {1: "a", 2:"b"}
-const obj2 = {3:"a",4:"b"}
+const obj2 = {3: "a", 4:"b"}
 
 // const bbj3 = Object.assign({},obj1,obj2);
 // or
@@ -144,7 +144,7 @@ const objjj = {
 };
 
 objjj.a = "three";
-console.log(objjj) // this will print a: "three", b: "two" =>a position
+console.log(objjj.a) // this will print a: "three", b: "two" =>a position
                   //will remain at the same position but value get replaced
 
 // Q2.

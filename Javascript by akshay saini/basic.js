@@ -5,4 +5,4 @@
                // access 'x' before initialization
  }
 
- abc();
+abc();

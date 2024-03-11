@@ -91,7 +91,7 @@ ans.then(function(){
 const cart = ["Shoes","Pants","Laptop"];
 createOrder(cart,function(orderId){
     proceedToPaymentId(orderId);
-0});
+});
 
 /* In this case we are kinds of dependent on the createOrder API
    to call theproceedToPaymentId API ,and we don't even know whether

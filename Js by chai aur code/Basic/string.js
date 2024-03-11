@@ -12,12 +12,12 @@ console.log(typeof gameName);
 console.log(gameName.toLowerCase()) // it won't change the original one
 console.log(gameName)
 console.log(gameName.charAt(2));
-const newString = gameName.substring(0,4);
-const newString2 = gameName.substring(1);
+const newString = gameName.substring(0,4); // Bapa
+const newString2 = gameName.substring(1);  // apan
 console.log(newString);
 console.log(newString2);
 const url = "https://bapan.com/bapan%20ghosh"
 console.log(url.replace('%20','_'));
 console.log(url.includes('sundar'));
-console.log(gameName.split('')); 
+console.log(gameName.split('')); // this will split the string to an array 
 // 

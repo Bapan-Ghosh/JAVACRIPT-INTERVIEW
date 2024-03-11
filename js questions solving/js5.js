@@ -7,4 +7,3 @@ let Copyarr = duplicate(arr);
 
 console.log(Copyarr);
 console.log(Copyarr.length);
-

@@ -15,6 +15,6 @@ api.createOrder(cart, function (){
     1. Issues with callbacks
        a> Callback Hell  (nested complex callbacks)
        b> Inversion of control   (every api is dependend on each others)
-
+ 
     ------AND SOLUTION of this call back hell is promises-------   
 */

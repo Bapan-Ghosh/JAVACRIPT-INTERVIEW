@@ -14,6 +14,5 @@ const occu = (str) =>{
 
      return occurencesObj;
 }
-
-
+  
 console.log(occu("bapan"));

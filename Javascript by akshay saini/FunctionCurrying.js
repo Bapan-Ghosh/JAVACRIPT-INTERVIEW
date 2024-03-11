@@ -13,7 +13,7 @@ multiplyByThree(5);
 // a function that returns another function which takes another arguments
 
 // Q1.  sum(2)(6)(1)
-const sum = (a)=>{
+const sum = (a)=>{ 
     return (b)=>{
          return (c)=>{
             return a*b*c;

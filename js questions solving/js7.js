@@ -5,8 +5,8 @@ const palindrome = (str)=>{
       while( i<= j){
          if(str[i] !== str[j])
            return false
-         i++;
-         j--;  
+           i++;
+           j--;  
       }
       return true;
 }
