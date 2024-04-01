@@ -33,11 +33,12 @@ const smartWatch = {
      price : 2200
 } 
 
-const {brand,model,price} = smartWatch;
+const {brand,model,price,year = 2020} = smartWatch;
 
 console.log(brand);
 console.log(model);
 console.log(price);
+console.log(year);
 
 
 // merge objects

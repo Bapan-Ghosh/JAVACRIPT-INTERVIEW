@@ -1,4 +1,4 @@
-const closure = () =>{
+const closure = () => {
       var a = 20;
       const closure2 = ()=>{
         console.log(a);
@@ -63,10 +63,6 @@ for(var i=1 ; i<= 5 ; i++){
     },i*1000)
 }
 
-
-
-
-
 //  :::::::::::::::::
 
 function outest(){
@@ -89,7 +85,6 @@ outest()()();
 
 */
 
-
 // data privacy and data hiding example
 
 /*
@@ -101,7 +96,6 @@ const incr = ()=>{
 }
 
 incr();    [as count function declared globally so data is not secure] */
-
 
 // we can write this way
 

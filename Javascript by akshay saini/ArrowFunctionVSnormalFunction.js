@@ -10,8 +10,7 @@ function abc (a,b){
 }
     
 console.log(abc(4,70));
-    
-    
+        
 // <2> We can not create constructors from arrow functions
 
 function Car(name){

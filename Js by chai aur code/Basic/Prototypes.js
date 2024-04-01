@@ -4,7 +4,8 @@
 // automatically creates prototypes  ) 
 
 // When a new object is created in JavaScript, it autmatically inherits 
-// properties and methods of its prototype object. This is known as prototypal inheritance
+// properties and methods of its prototype object. This is known as prototypal 
+// inheritance
 const obj = {
     name:"Bapan",
     getName:function(){

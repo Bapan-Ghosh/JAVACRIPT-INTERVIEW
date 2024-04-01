@@ -4,11 +4,11 @@ var B = 20;
 {
     let A = 100;
     var B = 200;
-    console.log(A);
-    console.log(B);  
+    console.log(A);            // 100
+    console.log(B);            // 200
 }
 
-console.log(A);
+console.log(A);               // 10   because of the blocked scope
 console.log(B); // This will be updated to 200
 
 // This is called shadowing

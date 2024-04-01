@@ -23,7 +23,6 @@ console.log(a?.b?.c?.d?.pinCode?.justLookingLikeAWOW);
    give undefined value  */
 
 
-
    /* Same with array of object */
 
    const cool = [

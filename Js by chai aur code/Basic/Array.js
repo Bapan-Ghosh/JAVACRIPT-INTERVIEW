@@ -89,5 +89,5 @@ const persons = [
   ];
  
  // Sort by age in descending order
- persons.sort((a, b) => b.age - a.age);
+ persons2.sort((a, b) => b.age - a.age);
  console.log(persons2);

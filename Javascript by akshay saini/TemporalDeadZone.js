@@ -17,5 +17,4 @@ var v = 55;
 
            first during memory allocation fetch inside script
                                                 a = undefined then
-
 */
