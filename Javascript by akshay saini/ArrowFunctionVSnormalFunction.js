@@ -51,7 +51,7 @@ let user = {
     }
 };
 
-user.gfg1(); // hello
+user.gfg1(); // hello  undefined(undefined is  for the this.name)
 user.gfg2(); // Welcome to GFG
 
 

@@ -89,10 +89,10 @@ console.log(evenNumbers); // Output: [2, 4, 6, 8]
 let fEach = [10,54,74,88,98];
 
 fEach.forEach((value)=>{
-    console.log(value*2);  // this will update the existing array with new value
+    console.log(value*2);  // this will print the existing array with new value
 })
 
-console.log(fEach);
+console.log(fEach);  // previous values will remain same
 
 /*
 

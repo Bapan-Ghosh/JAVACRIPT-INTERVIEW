@@ -6,7 +6,7 @@
 // Referene(Non primitive) // or reference type
 
 // Array, Objects, Functions       => non premitive heap me jata hai
-const heros = ["IronMan","captain marvel","captian america"];
+const heros = ["IronMan","captain marvel","captain america"];
 
 // Object
 let obj = {

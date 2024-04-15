@@ -3,6 +3,8 @@
 
 // First reverse [7,6,5,4,3,2,1] then ....
 
+// rotate array by k step
+
 // time complexity is O(n) and space complexity is O(1)
 function rotateK(nums,k){
      reverse(nums,0,nums.length-1);         

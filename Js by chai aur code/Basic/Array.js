@@ -75,7 +75,7 @@ const persons = [
    { name: 'Charlie', age: 35 },
  ];
  
- // Sort by age in ascending order
+// Sort by age in ascending order
  persons.sort((a, b) => a.age - b.age);
  console.log(persons);
 

@@ -68,7 +68,7 @@ console.log(copiedValue3);
 
 
 // :::::::::::::::::::::::::::::::::::: Deep Copy :::::::::::::::::::::::::::::
-const originalObject = { name: "John", age: 30, address: { city: "New York" } };
+const originalObject = { name: "John", age: 30, address: { city: "New York" }};
 const deepCopyObject = JSON.parse(JSON.stringify(originalObject));
 
 

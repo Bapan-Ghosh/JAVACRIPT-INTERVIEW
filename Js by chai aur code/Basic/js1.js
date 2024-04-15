@@ -1,5 +1,6 @@
 let abc = null;
 console.log(typeof abc);
+console.log(typeof []);
 let st = "12"
 let nm = Number(st);
 let stt = "444";
@@ -18,4 +19,3 @@ console.log("1"+2);  // 12
 console.log(1+"2");  // 12
 console.log("1"+2+2); // 122
 console.log(1+2+"2"); // 32
-
