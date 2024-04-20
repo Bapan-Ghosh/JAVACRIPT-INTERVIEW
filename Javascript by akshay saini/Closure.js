@@ -128,3 +128,72 @@ let counter1 = new Counter();
 counter1.incrementCounter();
  
 //   *>   Anonymous function : A function without a fnc name is called A...
+
+
+//////// PROBLEM SOLVINGS
+// Q 1.
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+      console.log(i);
+    }, 1000);
+  }
+
+  // output : 5
+
+//   Q 2.
+
+var func = [];
+for (var i = 0; i < 5; i++) {
+  func[i] = function() {
+    console.log(i);
+  };
+}
+func[3]();  
+/*  Output
+   The output of this code will be 5.
+
+This happens because the variable i is declared using var, which has function scope, not block scope.
+So, when the console.log(i) statement is executed inside any of the functions stored in the func 
+array, it will reference the same variable i, which at the end of the loop will be 5 because the loop
+terminates when i becomes 5. Therefore, no matter which function in the array you call, it will always
+log 5.
+*/
+
+/// Q 3.
+var func = [];
+for (let i = 0; i < 5; i++) {
+  func[i] = function() {
+    console.log(i);
+  };
+}
+func[3]();
+
+// output : 3
+
+
+////////////////////////////////////////////
+
+//    What is the output of below code how to fix it
+for (var i = 1; i <= 3; i++) { 
+    setTimeout(function() { 
+        console.log(i); 
+     }, i * 1000) ; 
+}
+
+// there are three ways to solve this
+// 1st way
+for(let i=1 ; i<=3 ; i++){
+    setTimeout(function(){
+        console.log(i)
+    }, i*1000)
+}
+
+// 2nd way
+
+for(var i=1 ; i<=3 ; i++){
+    (function(index){
+        setTimeout(function(){
+            console.log(i)
+        }, i*1000)
+    })(i)
+}

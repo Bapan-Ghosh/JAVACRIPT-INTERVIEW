@@ -29,3 +29,21 @@ call();
        this is also a callback function   // Jo ki baad me chalega after click
  
 */
+
+/* A callback function is a function passed into another function as an argument. This function is 
+invoked inside the outer function to complete an action. Let's take a simple example of how to use 
+callback function
+
+
+function callbackFunction(name) {
+console.log('Hello ' + name);
+}
+
+function outerFunction(callback) {
+  let name = prompt('Please enter your name.');
+  callback(name);                                //  calling the fun
+}
+
+outerFunction(callbackFunction);                // calling the fn
+
+*/
