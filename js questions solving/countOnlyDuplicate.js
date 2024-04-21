@@ -16,8 +16,7 @@ const duplicate =(arr)=>{
         }
     }
     
-    return obj;
-   
+    return obj;   
 }
 
 console.log(duplicate([1,2,3,2,5,6,1,2,8,5,9]));
