@@ -99,8 +99,8 @@ createOrder(cart,function(orderId){
    no surety that the call back fn will call
 */
 
-const promise = createOrder(cart);
-promise.then(function(orderId){
+const promise4 = createOrder(cart);
+promise4.then(function(orderId){
     proceedToPaymentId(orderId);
 })
 
@@ -188,4 +188,144 @@ promise166
      })
 
 // output will be 
-// Error 1 , Success 4 =>>>> Because of the rej error 1 will print and then    
+// Error 1 , Success 4 =>>>> Because of the rej error 1 will print and then   
+
+
+/////////////////////////////////////////////////////
+       //     Questions from    https://jscafe.site/index.php/q11-out/        here   
+////////////////////////////////////////////////////
+
+// Q 1
+var p = new Promise((resolve, reject) => {
+    reject(Error('The Fails!'))
+  })
+  p.catch(error => console.log(error.message))
+  p.catch(error => console.log(error.message))
+
+/* Output :  The Fails
+             The Fails
+*/
+
+// Q 2 :
+
+var p = new Promise((resolve, reject) => {
+    reject(Error('The Fails!'))
+  })
+  .catch(error => console.log(error.message))
+  .then(error => console.log(error))
+
+/* Output :
+         The Fails!
+         undefined
+*/
+
+// Q 3 :
+new Promise((resolve, reject) => {
+    resolve('Success!')
+  })
+  .then(() => {
+    throw Error('Oh noes!')
+  })
+  .catch(error => {
+    return "actually, that worked"
+  })
+  .then(message => console.log(message))
+
+/* 
+    Output :
+    actually, that worked
+*/
+
+// Q4
+
+Promise.resolve('Success!')
+  .then(data => {
+    return data.toUpperCase()
+  })
+  .then(data => {
+    console.log(data)
+  })
+
+/*
+   Output :
+     SUCCESS!
+*/  
+
+// Q 5 :
+Promise.resolve('Success!')
+  .then(() => {
+    throw Error('Oh noes!')
+  })
+  .catch(error => {
+    return 'actually, that worked'
+  })
+  .then(data => {
+    throw Error('The fails!')
+  })
+  .catch(error => console.log(error.message))
+
+/*
+   Output :
+     The fails!
+*/  
+
+// Q 6
+const promise6 = new Promise(res => res(2));
+promise6.then(v => {
+        console.log(v);
+        return v * 2;
+    })
+    .then(v => {
+        console.log(v);
+        return v * 2;
+    })
+    .finally(v => {              // parameter is not allowed in funally
+        console.log(v, 'finally');   
+        return v * 2;       // finally not do not return anything
+    })
+    .then(v => {
+        console.log(v);
+    });
+
+ /*
+    Output :
+    2
+    4
+    undefined finally
+    8
+ */   
+
+  
+// Q 7
+
+const promise = new Promise(function(resolve, reject) {
+    resolve('Promise has been resolved!');
+});
+
+promise.then((value) => console.log(value));
+console.log('I am not the promise');
+
+/*
+   :: Output ::
+      I am not the promise
+      Promise has been resolved!
+*/
+
+// Q 8
+const delay = () => {
+    return new Promise((resolve, reject) => {
+        return setTimeout(() => {
+            resolve('Hello');
+        }, 1000)
+    });
+}
+
+const sayHello = (value) => {
+    console.log('Hello');
+}
+
+delay().then(sayHello);
+
+/*    output
+      Hello
+*/
