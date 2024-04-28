@@ -136,9 +136,21 @@ for (var i = 0; i < 5; i++) {
     setTimeout(function() {
       console.log(i);
     }, 1000);
+  } 
+
+  // output : 5 5 5 5 5
+
+  // And if we want to get the answer like 0 1 2 3 4
+  // then we can write like ::::::::
+  for (var i = 0; i < 5; i++) {
+    (function(i) {
+      setTimeout(function() {
+        console.log(i);
+      }, 1000);
+    })(i);
   }
 
-  // output : 5
+//    or we can make the var to int
 
 //   Q 2.
 
@@ -197,3 +209,23 @@ for(var i=1 ; i<=3 ; i++){
         }, i*1000)
     })(i)
 }
+
+/////////////
+
+function buildFunction() {
+    var arr = [];
+    for(var i = 0; i < 3; i++) {
+      let j = i;  //Using let to assign j
+      arr.push(
+        function(){
+          console.log(j);
+        }
+      )
+    }
+     return arr;
+  }
+  
+  var fs = buildFunction();
+  fs[0](); //0
+  fs[1](); //1
+  fs[2](); //2
