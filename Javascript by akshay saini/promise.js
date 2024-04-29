@@ -192,7 +192,7 @@ promise166
 
 
 /////////////////////////////////////////////////////
-       //     Questions from    https://jscafe.site/index.php/q11-out/        here   
+       //     Questions from    https://jscafe.site/index.php/q11-out/       here   
 ////////////////////////////////////////////////////
 
 // Q 1
@@ -329,3 +329,14 @@ delay().then(sayHello);
 /*    output
       Hello
 */
+
+
+// Q 9.
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+console.log('Start');
+sleep(2000).then(() => {console.log('After 2 seconds')})
+
+// question was like implement sleep function

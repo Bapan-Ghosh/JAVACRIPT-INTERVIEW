@@ -12,8 +12,8 @@ console.log('loop is running')
 //   console.log(x);
 //   console.log(y);
 
-//   var x = 2;
-//   let y = 12;
+//   var x = 2;             // undefined
+//   let y = 12;            // can't access y before initialization
 // }
 // func1();
 
