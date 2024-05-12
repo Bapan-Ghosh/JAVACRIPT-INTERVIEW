@@ -1,6 +1,9 @@
 let abc = null;
-console.log(typeof abc);
-console.log(typeof []);
+console.log(typeof abc);       // object
+console.log(typeof []);        // object
+console.log(typeof null)       // object
+console.log(typeof undefined)  // undefined
+
 let st = "12"
 let nm = Number(st);
 let stt = "444";
@@ -18,4 +21,4 @@ console.log(Number(ll)); // this will print NaN
 console.log("1"+2);  // 12
 console.log(1+"2");  // 12
 console.log("1"+2+2); // 122
-console.log(1+2+"2"); // 32
+console.log(1+2+"2"); // 32       => always calculates left to right

@@ -39,8 +39,7 @@ var: Variables declared with var are hoisted to the top of their function or
      global scope. This means you can use the variable before it's declared in
      the code, but the value assigned to it won't be hoisted.
 
-javascript
-Copy code
+
 
 console.log(a); // undefined
 var a = 5;

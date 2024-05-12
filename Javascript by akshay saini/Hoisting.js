@@ -15,7 +15,7 @@ console.log("from var");
 
 //  important 
 
-getName();  // this will give us error "getName is not a function"
+getName();  // this will give us --"TypeError: getName is not a function"
              // because it will behave same as variable, during memory creation
              // fetch getName = undefined i.e why  
 
@@ -23,11 +23,11 @@ var getName = function (){
      console.log("abc");
 }
  
-/////////////////
+/////////////////////////////////////////////////////////////////////////////
 function buildFunction() {
     var arr = [];
     for(var i = 0; i < 3; i++) {
-      let j = i;  //Using let to assign j
+      let j = i;  //Using let to assign j, every time it is a new j
       arr.push(
         function(){
           console.log(j);

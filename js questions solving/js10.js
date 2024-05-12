@@ -1,5 +1,4 @@
 // let str = prompt("Enter the string ");
-
 const occu = (str) =>{
      let occurencesObj = {};
 //   using object so that we can count in key:value pair, like .......{a:1}

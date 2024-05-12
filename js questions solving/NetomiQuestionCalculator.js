@@ -9,6 +9,6 @@ const calculator = {
         return this;
     }
 }
-
+    
 const result = calculator.add(10).multiply(5)
 console.log(result.total)

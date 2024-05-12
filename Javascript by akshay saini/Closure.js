@@ -25,11 +25,11 @@ closure()()
 function x(){
     var a = 7;
     function y(){
-        console.log(a);
+        console.log(a); // 100
     }
     var a = 100;
     y()
-    console.log(a)
+    console.log(a)  // 100
 }
 
 x();   // this will print 100
@@ -188,7 +188,7 @@ func[3]();
 //    What is the output of below code how to fix it
 for (var i = 1; i <= 3; i++) { 
     setTimeout(function() { 
-        console.log(i); 
+        console.log(i);  
      }, i * 1000) ; 
 }
 

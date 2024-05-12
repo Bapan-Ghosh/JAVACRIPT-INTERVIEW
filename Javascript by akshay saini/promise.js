@@ -272,19 +272,19 @@ Promise.resolve('Success!')
 // Q 6
 const promise6 = new Promise(res => res(2));
 promise6.then(v => {
-        console.log(v);
+        console.log(v);           // 2
         return v * 2;
     })
     .then(v => {
-        console.log(v);
+        console.log(v);           // 4
         return v * 2;
     })
     .finally(v => {              // parameter is not allowed in funally
-        console.log(v, 'finally');   
-        return v * 2;       // finally not do not return anything
+        console.log(v, 'finally');     // undefined finally
+        return v * 2;       // finally do not return anything
     })
     .then(v => {
-        console.log(v);
+        console.log(v);     // 8
     });
 
  /*
@@ -314,26 +314,21 @@ console.log('I am not the promise');
 // Q 8
 const delay = () => {
     return new Promise((resolve, reject) => {
-        return setTimeout(() => {
+         setTimeout(() => {
             resolve('Hello');
         }, 1000)
     });
 }
-
 const sayHello = (value) => {
     console.log('Hello');
 }
-
 delay().then(sayHello);
-
 /*    output
-      Hello
-*/
-
+      Hello    */
 
 // Q 9.
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(()=>resolve(), ms));
 }
 
 console.log('Start');

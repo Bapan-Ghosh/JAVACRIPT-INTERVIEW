@@ -5,16 +5,14 @@
 Assigning to a Variable:
 You can assign a function to a variable.
 
-javascript
-Copy code
+
 const greet = function(name) {
   console.log(`Hello, ${name}!`);
 };
 Passing as a Parameter:
 Functions can be passed as an arguments to other functions.
 
-javascript
-Copy code
+
 function sayHello(greetingFunction, name) {
   greetingFunction(name);
 }
@@ -25,8 +23,7 @@ sayHello(greet, "John");
 Returning from a Function:
 Functions can be returned from other functions.
 
-javascript
-Copy code
+
 function createGreeter() {
   return function(name) {
     console.log(`Greetings, ${name}!`);
